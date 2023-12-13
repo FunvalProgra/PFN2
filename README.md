@@ -13,97 +13,85 @@ Para este proyecto, debes crear una plataforma con sistema de roles. Existen tre
 ### ADMIN
 
 - Crear, Leer, Actualizar y Eliminar registros de maestros (CRUD).
-- Crear, Leer, Actualizar y Eliminar registros de alumnos (CRUD).
 - Crear, Leer, Actualizar y Eliminar clases/materias/cursos registrados (CRUD).
-- Relacionar un maestro a un curso (o más, si gustas).
-- Eliminar maestros no requiere que dicho maestro no tenga cursos asignados, se puede eliminar un maestro sin necesidad de dicha corroboración.
+- Relacionar un maestro a varios cursos.
+- Se pueden eliminar registros de maestros aún si él/ella tiene asignado(a) varios clases.
 - Cambiar el rol de cada usuario (no se permite crear nuevos roles).
 
 ### MAESTRO
 
 - Ver la clase a la que como maestro está asignado.
-- Ver los datos de sus alumnos.
-
-### ALUMNO
-
-- Ver y cambiar las clases en las que está registrado.
 
 ## Archivos proporcionados en este repositorio
 
 En este repositorio te hemos dado los siguientes archivos:
 
 - En la carpeta `assets` encontrarás un archivo llamado `logo.jpg` el cual es el logo de la universidad en cuestión.
-- En la carpeta `design` encontrarás tres carpetas: `admin`, `alumno` y `maestro`. En cada una se encuentran las respectivas capturas de pantalla que ilustran la funcionalidad del proyecto. Recuerda que <b>NO</b> es 100% obligatorio utilizar el mismo diseño. Sin embargo, debes aún **respetar la funcionalidad y los colores del logo que te hemos proporcionado**.
+- En la carpeta `design` encontrarás tres carpetas: `admin` y `maestro`. En cada una se encuentran las respectivas capturas de pantalla que ilustran la funcionalidad del proyecto. Recuerda que <b>NO</b> es 100% obligatorio utilizar el mismo diseño. Sin embargo, debes aún **respetar la funcionalidad y los colores del logo que te hemos proporcionado**.
+
+> **NOTA:** En la barra de navegación lateral y en otras partes de las imágenes que te proporcionamos en `design` verás botones o texto que dice "Alumnos", no es necesario que los coloques porque en este proyecto no hemos implementado ese rol.
 
 ## Consideraciones para la calificación
 
 A continuación te presentaremos los requerimientos que se tomarán en cuenta para la calificacion del proyecto, así como sus respectivos puntajes.
 
-Tenemos 5 categorías a calificar:
-
-### Interfaz de Usuario (UI) - 12 puntos
+### Interfaz de Usuario (UI) - 10 puntos
 
 | Requerimiento                                                                          | Valor (puntaje) |
 | :------------------------------------------------------------------------------------- | :-------------: |
-| El proyecto ha sido realizado con Tailwind CSS.                                        |        3        |
-| Instaló Tailwind CSS por medio de CLI.                                                 |        3        |
-| La interfaz del usuario (UI) tiene el logo de la universidad.                          |        3        |
-| Respetar los colores del logo de la universidad o buscar otros que combinen con estos. |        3        |
-| Total                                                                                  |    12 puntos    |
+| La interfaz del usuario (UI) tiene el logo de la universidad.                          |        5        |
+| Respetar los colores del logo de la universidad o buscar otros que combinen con estos. |        5        |
+| Total                                                                                  |    10 puntos    |
 
-### Rol: Admin - 49 puntos
+### Login - 10 puntos
 
-| Requerimiento                             | Valor (puntaje) |
-| :---------------------------------------- | :-------------: |
-| Crear registros de maestros (CRUD).       |        4        |
-| Leer registros de maestros (CRUD).        |        3        |
-| Actualizar registros de maestros (CRUD).  |        4        |
-| Eliminar registros de maestros (CRUD).    |        3        |
-| Crear registros de alumnos (CRUD).        |        4        |
-| Leer registros de alumnos (CRUD).         |        3        |
-| Actualizar registros de alumnos (CRUD).   |        4        |
-| Eliminar registros de alumnos (CRUD).     |        3        |
-| Crear materias (CRUD).                    |        4        |
-| Leer materias (CRUD).                     |        3        |
-| Actualizar materias (CRUD).               |        4        |
-| Eliminar materias (CRUD).                 |        3        |
-| Relacionar un maestro a un curso (o más). |        4        |
-| Cambiar el rol de cada usuario.           |        3        |
-| Total                                     |    49 puntos    |
+| Requerimiento                     | Valor (puntaje) |
+| :-------------------------------- | :-------------: |
+| Contraseña hasheada o encriptada. |        5        |
+| Login de acuerdo al rol.          |        5        |
+| Total                             |    10 puntos    |
+
+### Rol: Admin - 40 puntos
+
+| Requerimiento                            | Valor (puntaje) |
+| :--------------------------------------- | :-------------: |
+| Crear registros de maestros (CRUD).      |        4        |
+| Leer registros de maestros (CRUD).       |        4        |
+| Actualizar registros de maestros (CRUD). |        4        |
+| Eliminar registros de maestros (CRUD).   |        4        |
+| Crear materias (CRUD).                   |        4        |
+| Leer materias (CRUD).                    |        4        |
+| Actualizar materias (CRUD).              |        4        |
+| Eliminar materias (CRUD).                |        4        |
+| Relacionar un maestro a varios cursos.   |        4        |
+| Cambiar el rol de cada usuario.          |        4        |
+| Total                                    |    40 puntos    |
 
 ### Rol: Maestro - 8 puntos
 
-| Requerimiento                                     | Valor (puntaje) |
-| :------------------------------------------------ | :-------------: |
-| Ver la clase a la que como maestro está asignado. |        4        |
-| Ver los datos de sus alumnos.                     |        4        |
-| Total                                             |    8 puntos     |
+| Requerimiento                                            | Valor (puntaje) |
+| :------------------------------------------------------- | :-------------: |
+| Ver todas las clase a la que como maestro está asignado. |        8        |
+| Total                                                    |    8 puntos     |
 
-### Rol: Alumno - 4 puntos
-
-| Requerimiento                                        | Valor (puntaje) |
-| :--------------------------------------------------- | :-------------: |
-| Ver y cambiar las clases en las que está registrado. |        4        |
-| Total                                                |    4 puntos     |
-
-### Estructura del proyecto - 27 puntos
+### Estructura del proyecto - 32 puntos
 
 | Requerimiento                                                      | Valor (puntaje) |
 | :----------------------------------------------------------------- | :-------------: |
 | MVC y POO.                                                         |       15        |
-| Usó llaves foráneas en la base de datos                            |       10        |
+| Usar llaves foráneas en la base de datos                           |       15        |
 | El archivo index.php se encuentra en la carpeta raíz del proyecto. |        2        |
-| Total                                                              |    27 puntos    |
+| Total                                                              |    32 puntos    |
 
-## ACUMULADO DE CATEGORÍAS
+## ACUMULADO
 
 | Categoría                | Valor (puntaje) |
 | :----------------------- | :-------------: |
-| Interfaz de Usuario (UI) |       12        |
-| Rol: Admin               |       49        |
+| Interfaz de Usuario (UI) |       10        |
+| Login                    |       10        |
+| Rol: Admin               |       40        |
 | Rol: Maestro             |        8        |
-| Rol: Alumno              |        4        |
-| Estructura del proyecto  |       27        |
+| Estructura del proyecto  |       32        |
 | Total                    |   100 puntos    |
 
 ## Consideraciones OPCIONALES que suman puntos:
@@ -112,11 +100,7 @@ Tenemos 5 categorías a calificar:
 - Activar o desactivar a un usuario en el panel de administrador (quiere decir que si un usuario ha sido desactivado, no debería poder acceder con sus credenciales hasta que sea activado nuevamente).
 - Las tablas tienen botones que permiten exportar los datos de las mismas en formato PDF, Excel, etc.
 - Las tablas están paginadas.
-- El admin puede ver la cantidad de alumnos inscritos en cada clase.
-- Cada maestro puede Crear, Leer, Actualizar y Eliminar calificaciones y comentarios de sus alumnos.
-- El alumno puede ver en la pestaña "Ver Calificaciones" un mensaje dejado por el maestro y la calificación de cada curso.
 - Usar el plugin de Datatables (https://datatables.net/).
-- Desarrollar toda la interfaz del usuario (UI) desde cero.
 - Alguna otra funcionalidad acorde a la lógica del negocio.
 
 Si existiesen requerimientos extras que se hayan realizado (de la lista de consideraciones opcionales o de tu propia iniciativa), debes dejar una nota en el archivo README.md de tu repositorio en GitHub que especifique cada una.
