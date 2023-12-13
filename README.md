@@ -1,4 +1,4 @@
-Bienvenido al proyecto final del nivel 3. En este proyecto estaremos aplicando los conocimientos adquiridos a lo largo del nivel. Sigue las instrucciones de este archivo para completar el proyecto y ten en cuenta que estas mismas se tomarán en cuenta para la evaluación final del proyecto.
+Bienvenido al proyecto final del nivel 2. En este proyecto estaremos aplicando los conocimientos adquiridos a lo largo del nivel. Sigue las instrucciones de este archivo para completar el proyecto y ten en cuenta que estas mismas se tomarán en cuenta para la evaluación final del proyecto.
 
 ## Instrucciones
 
@@ -11,7 +11,7 @@ Para este proyecto, debes crear una plataforma con sistema de roles. Existen tre
 - Crear, Leer, Actualizar y Eliminar registros de maestros (CRUD).
 - Crear, Leer, Actualizar y Eliminar clases/materias/cursos registrados (CRUD).
 - Relacionar un maestro a varios cursos.
-- Se pueden eliminar registros de maestros aún si él/ella tiene asignado(a) varios clases.
+- Se pueden eliminar registros de maestros aún si él/ella tiene asignado(a) varias clases.
 - Cambiar el rol de cada usuario (no se permite crear nuevos roles).
 
 ### MAESTRO
