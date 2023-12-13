@@ -1,12 +1,8 @@
-# Instrucciones
-
 Bienvenido al proyecto final del nivel 3. En este proyecto estaremos aplicando los conocimientos adquiridos a lo largo del nivel. Sigue las instrucciones de este archivo para completar el proyecto y ten en cuenta que estas mismas se tomarán en cuenta para la evaluación final del proyecto.
 
-## Instrucciones generales
+## Instrucciones
 
 Existe una universidad que desea crear su plataforma virtual. El diseño de la página web no está terminado, pero existen algunas vistas que podrían servir de referencia que vamos a dejarte en este repositorio. Según las instrucciones que el cliente nos ha dado, te daré las indicaciones necesarias para completar el proyecto.
-
-## Instrucciones del proyecto
 
 Para este proyecto, debes crear una plataforma con sistema de roles. Existen tres en específico: admin, maestro y alumno. Cada uno tendrá las siguientes funcionalidades:
 
