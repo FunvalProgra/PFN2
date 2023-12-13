@@ -74,7 +74,8 @@ A continuación te presentaremos los requerimientos que se tomarán en cuenta pa
 
 | Requerimiento                                                      | Valor (puntaje) |
 | :----------------------------------------------------------------- | :-------------: |
-| MVC y POO.                                                         |       15        |
+| MVC                                                                |        7        |
+| POO                                                                |        8        |
 | Usar llaves foráneas en la base de datos                           |       15        |
 | El archivo index.php se encuentra en la carpeta raíz del proyecto. |        2        |
 | Total                                                              |    32 puntos    |
